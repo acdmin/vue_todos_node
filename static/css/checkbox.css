@@ -1,0 +1,7 @@
+.checkbox { display: flex; flex-direction: row; flex-grow: 1; align-items: center; font-size: 14px; }
+.checkbox label { width: 25px; height: 25px; border-radius: 50%; border: 1px solid #ccc; box-sizing: border-box; display: inline-block; margin-right: 8px; position: relative; }
+.checkbox.checked { color: red; }
+.checkbox.checked label { border-color: red; }
+.checkbox.checked label::after { content: ''; position: absolute; left: 5px; top: 1px; width: 22px; height: 8px; border-left: 2px solid red; border-bottom: 2px solid red; transform: rotate(-40deg); border-bottom-left-radius: 3px; }
+.checkbox.disabled { color: #ccc; }
+.checkbox.disabled label { border-color: #ececec; }
